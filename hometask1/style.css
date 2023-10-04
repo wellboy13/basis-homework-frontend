@@ -1,0 +1,20 @@
+h1{
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.main-div {
+    background-color: rgb(235, 238, 239);
+    margin: 10%;
+    padding: 1%;
+}
+.text-area {
+background-color: #34495E;
+margin: 20px;
+padding: 30px;
+border-radius: 20px;
+}
+p {
+color: white;
+padding-left: 2%;
+padding-right: 2%;
+}
