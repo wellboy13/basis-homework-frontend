@@ -1,0 +1,54 @@
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 1%;
+}
+
+div {
+    margin: 1px;
+    display: flex;
+}
+
+
+.euro-flag {
+    width: 100px;
+    height: 50px;
+    background-image: url(./img/euro-flag.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.usa-flag {
+    width: 100px;
+    height: 50px;
+    background-image: url(./img/usa-flag.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.gb-flag {
+    width: 100px;
+    height: 50px;
+    background-image: url(./img/gb-flag.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.japan-flag {
+    width: 100px;
+    height: 50px;
+    background-image: url(./img/japan-flag.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.georgia-flag {
+    width: 100px;
+    height: 50px;
+    background-image: url(./img/georgia-flag.jpg);
+    background-size: contain;
+    background-position: center;
+}
