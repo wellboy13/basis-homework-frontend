@@ -1,5 +1,8 @@
 table {
     border-collapse: collapse;
+    text-wrap: wrap;
+    text-align: center;
+
 }
 
 th, td {
