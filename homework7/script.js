@@ -4,12 +4,13 @@ function max(num1, num2) {
 
     if (num1 > num2) {
         return num2
-    } else if (num1 < num2) {
-        return num1
-    } else {
-        console.log(`Введенные числа равны`)
     }
-}
+    if (num1 < num2) {
+        return num1
+    }
+       return "Введенные числа равны"
+    }
+
 num1 = +(prompt('Введите первое число: '))
 num2 = +(prompt('Введите второе число: '))
 
@@ -50,9 +51,31 @@ function evenSecond(num1, num2) {
     }
 }
 
-
+// 3 вариант
+function logEvenNums(a, b) {
+    if (a == b) {
+      console.log("числа равны")
+      return
+    }
+    let min = a // предполагаем, что одно значение мин, а другое макс.
+    let max = b
+    if(a > b) { // исправляем есди это неверно
+      min = b
+      max = a
+    }
+  
+    for(let i = max; i >= min; i--) {
+      if (i % 2 === 0) {
+        console.log(i);
+      }
+    }
+  }
+  
+ 
 evenFirst(10, 2) // 1 вариант
 evenSecond(10, 2) // 2 вариант
+logEvenNums(10, 20) // 3 вариант
+logEvenNums(33, 25)
 
 
 
@@ -71,11 +94,15 @@ console.log(power(10))
 
 
 function sum(n) {
+    if(n < 1) {
+        return null
+    }
     let sum = 0
+    
     for(let i = 1; i <= n; i++) {
         sum += i
     }
-    console.log(`Сумма чисел от 1 до ${n} равна ${sum}`)
+    return sum
 }
 
 sum(5)
@@ -115,7 +142,7 @@ function firstElementArray(array) {
         let firstLongestElement = array[0] // задаем раб переменную первого длинного элемента массива
 
         for(let i = 1; i < array.length; i++) { // прогоняем массив через цикл
-            if (array[i].length > firstLongestElement.length && array[i].length != firstLongestElement.length) { // сравниваем следующий элемент с предыдущим по его длине (если короче или равен, то выход из цикла)
+            if (array[i].length > firstLongestElement.length) { // сравниваем следующий элемент с предыдущим по его длине (если короче или равен, то выход из цикла)
                 firstLongestElement = array[i] // если след элемент длинее, чем предыдущий, присваиваем новое значение firstLongestElement 
             }
         }
