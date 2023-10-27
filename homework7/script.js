@@ -152,3 +152,5 @@ function firstElementArray(array) {
 
 const stringArray = ["1", "12", "1234(1)", "1234(2)", "1", "12"]
 console.log(`Первый длиный элемент массива: ${firstElementArray(stringArray)}`)
+
+
