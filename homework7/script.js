@@ -51,7 +51,7 @@ function evenSecond(num1, num2) {
     }
 }
 
-// 3 вариант
+// 3 вариант.
 function logEvenNums(a, b) {
     if (a == b) {
       console.log("числа равны")
