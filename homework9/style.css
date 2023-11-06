@@ -1,0 +1,55 @@
+* {
+    border: none;
+    outline: none;
+}
+
+body {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    font-size: 24px;
+    
+}
+
+.red-square {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+.red-square-click {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-bottom: 20px;
+}
+.pink-square {
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    margin-bottom: 20px;
+}
+.pink-square-click {
+    background-color: blue;
+}
+
+.square-up {
+    height: 150px;
+    width: 150px;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+.square-up-click {
+    height: 170px;
+    width: 170px;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+.p-blue {
+    color: blue;
+}
+.p-green {
+    color: green;
+}
